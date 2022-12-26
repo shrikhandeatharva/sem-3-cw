@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title> Documentation Page</title>
+    <link rel="stylesheet" href="practical8.css">
+</head>
+<body>
+    <h1><u>AUTOMATIC STREEET LIGHT CONTROL </u></h1>
+    <hr>
+    <h2>OBJECTIVE AND GOALS</h2>
+    <ul>
+        <li>This project aims to design an automatic street light that works in both conventional as well as
+            non-conventional energy resources.</li>
+        <li> Using LDR we control the street light, when
+            the LDR value falls above the threshold value the lights are switched on and when the value falls
+            below the threshold value the lights are switched off.</li>
+        <li>The main goal is to save eletricity. Because many a times, the street lights are on even in the morning when
+            they are of no lot of energy can be saved if we use this mechanism.</ <li>we can save the man power, as well
+            as reduce wastage of electricity.</li>
+    </ul>
+    <h2>SOFTWARE USED</h2>
+    <ol>
+        <li>uvision IDE (Keil) - For ARM</li>
+        <li>Proteus - simulation tool</li>
+    </ol>
+    <div class="img">
+        <img src="https://cdn.shopify.com/s/files/1/2261/0117/files/street_light_480x480.jpg?v=1624599251">
+    </div>
+    <h2>THE OROTICAL THINKING</h2>
+    <p>During day time there is sunlight so we don't need any street lighting but during night time there's no lighting
+        so we need street lights. so to make this more convenient we can design a project using hardware and software in
+        which street lights turn on and off according to time on its own, also called an automatic street lighting
+        project. In order to save and conserve energy in an efficient way we are designing this project. so there are
+        two conditions in this project,one is day time and other is night time. Day time means full lighting and lights
+        should be off. Night time means no light and lights should turn on automatically, so the hardware building
+        blocks required for this project are sensors that are LDR (Light dependent resistors) as input devices and
+        street lights are output devices which interface with microcontrollers. During day time Lol will offer very less
+        resistance and during night time LDR will offer high resistance.</p>
+    <ul>
+        <li>Day time (presence of 1ight) ---> LDR less resistance Lights turn off</li>
+        <li>ight time(absence of light) ---> LDR high</li>
+        <li>Input device ---> sensors LDR (Light Dependent Resistor)</li>
+        <li>output device ---> street lights</li>
+    </ul>
+    <h3>Light sensor</h3>
+    <ul>
+        <li>Light sensor is used to sense the amount of light.</li>
+        <li>hy is LDR preferred the most ? Because...
+            <ul>
+                <list is cheap in price</li>
+                    <li>Easily available in the market</li>
+                    <li>can be easily interfaced with a microcontroller to sense intensity of light.</li> clista has the
+                    property to change its resistance according to intensity of light. If light is high, LDR will have
+                    low resistance and if light is low, LDR will have high Microcontrollers can easily read this
+                    resistance in the form of voltage and
+                    resistance.c/li>
+                    which can be back converted into proportional value of light
+        </li>
+    </ul>
+    </11>
+    </ul>
+    <h2>WORKING</h2>
+    <p>THIS IS HOW VOLTAGE DIVIDER CIRCUIT WORKS
+        In the voltage divider circuit there are two logic signals -</p>
+    <li>Power-logic 1</li>
+    <li>Ground-logic 0</li>
+    </01>
+    <p>In simulation part there are different modules like LDR and a voltage divider circuit (Vout-Vin r2/r1 r2) and
+        on the basis of this we will get output voltage that is given to any one GPIO pin of a microcontroller. we
+        are using a port 1-8 pin to connect the sensor to the microcontroller. And in output we are using different
+        street lights like Port 2-0 to Port 2- 7 pins for interfacing street lights. During night time there is no
+        light on LDR so it offers very high resistance and if there is light then resistance will be less.So in this
+        case e logic is connected to the microcontroller. And in day time due to less resistance, input to the
+        microcontroller will be 1.50 whenever input is 0 we need output as 1 and vice versa.</p>
+    <h2>CODE</h2>
+    <p>
+        #include<reg51.h><br>
+            #define street_light P2<br>
+            sbit light sensor=P1^0; <br>
+            void main(void)<br>
+            {<br>
+            while(1)<br>
+            {<br>
+            if (light sensor==0)<br>
+            {<br>
+            street light 0XFF;<br>
+            }<br>
+            else<br>
+            {<br>
+            street light - 0X00;<br>
+            }<br> }<br>
+            }<br>
+    </p>
+</body>
+</html>

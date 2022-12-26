@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246));
+}
+#block{
+    background-color: rgba(0,0,0,0.9);
+    background-color: rgb(14, 36, 160);
+    opacity: 80%;
+    width: 20%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.9);
+    color: #fff;
+    margin-top: 180px;
+    margin-left: 515px;
+    margin-right: 700px;
+    padding-left: 95px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+#heading{
+    padding-left: 47px;
+}
+#centre{
+    padding-left: 19px;
+}
