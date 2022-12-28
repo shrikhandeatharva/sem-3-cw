@@ -1,6 +1,6 @@
 hr
 {
-color:sienna;
+color:rgb(50, 33, 146);
 }
 p
 {
@@ -8,5 +8,8 @@ margin-left:20px;
 }
 body
 {
-background-image:url(“sheet.jpg”);
+background-image:url(“https://www.nissan-global.com/EN/INNOVATION/TECHNOLOGY/ARCHIVE/ALH/ASSETS/IMG/alh_04_en.jpg”);
+}
+#head{
+    text-align: center;
 }

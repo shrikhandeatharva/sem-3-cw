@@ -1,0 +1,32 @@
+body{
+    background-image: url(college4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+#head{
+    text-align: center;
+}
+#ha{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+#hb{
+font-size: large;
+}
+#hc{
+    font-size: large;
+    text-align: center;
+}
+#move{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+}
+#box{
+    background-color: blanchedalmond;
+    width: 300px;
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+body{
+    background-image: linear-gradient(rgb(43, 43, 218),rgb(230, 136, 152),rgb(105, 226, 105));
+    background-repeat: no-repeat;
+    min-height: 98vh;
+    
+}
+#outbox{
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 270px;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 575px;
+    margin-top:130px;
+    background-color: rgb(164, 127, 221,0.4);
+    
+}
+#heading{
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+#submit{
+    margin-left: 63px;
+}
+#submit:hover{
+    background-color:rgb(184, 229, 247);
+}
